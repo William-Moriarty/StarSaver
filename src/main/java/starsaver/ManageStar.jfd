@@ -4,8 +4,8 @@ new FormModel {
 	contentType: "form/swing"
 	root: new FormRoot {
 		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
-			"$horizontalGroup": "par l {seq l {space :p:27:p, comp jPanel1:::p::p, space u:::p, par l {seq {par l {seq l {comp lbl_viewBy:::p::p, space s:::p, comp cbo_viewBy:::p::p, space :p:33:p, comp btn_search:::p::p, space :p:33:p, comp btn_viewAll:::p::p, space :p:31:p, comp btn_reset2:::p:72:p, space :0:0:x}, comp jScrollPane1:::::x}, space :p:18:p}, seq {par l {comp txt_viewBy:::p:111:p, comp lbl_criteria:::p::p}, space :::x}}}, seq t {space :::x, comp lbl_header:::p::p, space :p:485:p}}"
-			"$verticalGroup": "par l {seq t {space :p:35:p, comp lbl_header:::p::p, space :::x, par l {comp jPanel1:::p::p, seq {space :p:29:p, comp jScrollPane1:::p:570:p, space :p:40:p, par l:::p {comp btn_reset2:::p::p, par l {par l:::p {comp btn_search:::::x, comp btn_viewAll::::43:x}, par b:t {comp cbo_viewBy::b:p:43:p, comp lbl_viewBy::b:p::p}}}, space :p:11:p, comp lbl_criteria:::p::p, space :::p, comp txt_viewBy:::p::p}}, space :::p}}"
+			"$horizontalGroup": "par l {seq l {space :p:27:p, comp jPanel1:::p::p, space u:::p, par l {seq {par l {seq l {comp lbl_viewBy:::p::p, space s:::p, comp cbo_viewBy:::p::p, space :p:33:p, comp btn_search:::p::p, space :p:33:p, comp btn_viewAll:::p::p, space :p:31:p, comp btn_reset2:::p:72:p, space :0:0:x}, comp jScrollPane1:::::x}, space :p:18:p}, seq {par l {comp txt_viewBy:::p:111:p, comp lbl_criteria:::p::p}, space ::608:x}}}, seq t {space :::x, comp lbl_header:::p::p, space :p:485:p}}"
+			"$verticalGroup": "par l {seq t {space :p:35:p, comp lbl_header:::p::p, space ::77:x, par l {comp jPanel1:::p::p, seq {space :p:29:p, comp jScrollPane1:::p:570:p, space :p:40:p, par l:::p {comp btn_reset2:::p::p, par l {par l:::p {comp btn_search:::::x, comp btn_viewAll::::43:x}, par b:t {comp cbo_viewBy::b:p:43:p, comp lbl_viewBy::b:p::p}}}, space :p:11:p, comp lbl_criteria:::p::p, space :::p, comp txt_viewBy:::p::p}}, space :::p}}"
 		} ) {
 			name: "this"
 			"defaultCloseOperation": 3
@@ -207,8 +207,7 @@ new FormModel {
 				"text": "Manage Star Properties"
 			} )
 		}, new FormLayoutConstraints( null ) {
-			"size": new java.awt.Dimension( 869, 802 )
-			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 400, 300 )
 		} )
 	}
 }

@@ -1,0 +1,189 @@
+JFDML JFormDesigner: "6.0.0.0.84" Java: "1.8.0_112-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {space :::p, comp jPanel1:::p::p, par l {seq t {space :::x, comp lbl_sat:::p::p, space :p:104:p}, seq l {space :p:50:p, comp jPanel2:::p::p, space :0:40:x}}}, seq t {space :0:0:x, comp lbl_header:::p::p, space :p:285:p}, seq l {space :p:365:p, comp btn_add:::p:129:p, space :::x}}"
+			"$verticalGroup": "par l {seq l {space :p:34:p, comp lbl_header:::p::p, space :p:28:p, comp lbl_sat:::p::p, par l {seq l {space :::x, comp jPanel1:::p::p, space s:::p}, seq {space :p:44:p, comp jPanel2:::p::p, space ::24:p}}, comp btn_add:::p:76:p, space :p:25:p}}"
+		} ) {
+			name: "this"
+			"defaultCloseOperation": 3
+			"resizable": false
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lbl_header"
+				"font": new java.awt.Font( "Tahoma", 1, 24 )
+				"text": "Record Star Properties"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btn_add"
+				"text": "Add Record"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btn_addActionPerformed", true ) )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {par t {comp jLabel3:::p::p, seq {par t {par t:::p {seq {space :p:109:p, comp lbl_id::::17:x}, comp lbl_constellation:::p::p, comp lbl_type:::p::p}, comp lbl_name::t:p::p, comp lbl_distance:::p::p, comp lbl_radius:::p::p, comp lbl_mag:::p::p, comp lbl_mass:::p::p, comp lbl_temp:::p::p, comp lbl_lum:::p::p}, space u:::p, par l {comp txt_id:::p:64:p, comp txt_name:::p:166:p, comp cbo_type::l:p:166:p, comp txt_const::l:p:166:p, comp txt_dist::l:p:166:p, comp txt_radius::l:p:166:p, comp txt_mag::l:p:166:p, comp txt_mass::l:p:166:p, comp txt_temp::l:p:166:p, comp txt_lum::l:p:166:p}}}, space u:::p, par l {comp lbl_M:::p::p, comp lbl_L:::p::p, comp lbl_K:::p:18:p, comp lbl_KG:::p::p, comp lbl_Km::l:p::p, comp lbl_lightyears:::p::p}, space :0:10:x}}"
+				"$verticalGroup": "par l {seq l {space :p:21:p, par t {comp txt_id:::p::p, comp lbl_id:::p::p}, space :p:26:p, par b {comp txt_name::b:p::p, comp lbl_name::b:p::p}, space :p:28:p, par b {comp cbo_type::b:p::p, comp lbl_type::b:p::p}, space :p:30:p, par t {comp txt_const:::p::p, comp lbl_constellation:::p::p}, space :p:31:p, par t {seq {par b {comp txt_dist::b:p::p, comp lbl_lightyears::b:p::p, comp lbl_distance::b:p::p}, space :p:29:p, par t {par b {comp txt_radius::b:p::p, comp lbl_Km::b:p::p}, comp lbl_radius:::p::p}, space :p:30:p, par b {comp txt_mag::b:p::p, comp lbl_mag::b:p::p, comp lbl_M::b:p::p}, space :p:27:p, par b {comp txt_mass::b:p::p, comp lbl_mass::b:p::p, comp lbl_KG::b:p::p}, space :p:31:p, par t {comp txt_temp:::p::p, comp lbl_temp:::p::p}}, comp lbl_K:::p::p}, space :p:34:p, par b {comp txt_lum::b:p::p, comp lbl_lum::b:p::p, comp lbl_L::b:p::p}, space s:::p, comp jLabel3:::p::p, space :::x}}"
+			} ) {
+				name: "jPanel1"
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "txt_id"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lbl_id"
+					"text": "ID"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "txt_name"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lbl_name"
+					"text": "Name"
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "cbo_type"
+					"model": new javax.swing.DefaultComboBoxModel {
+						selectedItem: "-"
+						addElement( "-" )
+						addElement( "O" )
+						addElement( "B" )
+						addElement( "A" )
+						addElement( "F" )
+						addElement( "G " )
+						addElement( "K" )
+						addElement( "M" )
+					}
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lbl_type"
+					"text": "Type"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "txt_const"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lbl_constellation"
+					"text": "Constellation"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "txt_dist"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lbl_distance"
+					"text": "Distance*"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "txt_radius"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lbl_lightyears"
+					"text": "Lightyears from Earth"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lbl_radius"
+					"text": "Radius*"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lbl_Km"
+					"text": "R"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lbl_mag"
+					"text": "Magnitude*"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "txt_mag"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lbl_M"
+					"text": "Ma"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "txt_mass"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lbl_mass"
+					"text": "Mass*"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lbl_KG"
+					"text": "M"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lbl_temp"
+					"text": "Surface Temperature*"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "txt_temp"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lbl_K"
+					"text": "K"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lbl_lum"
+					"text": "Luminosity*"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "txt_lum"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lbl_L"
+					"text": "L"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "jLabel3"
+					"font": new java.awt.Font( "Tahoma", 0, 10 )
+					"text": "* will only accept decimal or numeric values"
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq t {space ::96:x, comp lbl_hier:::p::p, space :p:80:p}, seq {par l {seq l {space :p:39:p, par t {comp jLabel1::t:p:248:p, par l {comp jScrollPane3::l:p:256:p, par l:l {comp txt_body:::p:256:p, seq t {comp btn_addBody:::p::p, space :p:35:p, comp btn_del:::p::p, space :p:46:p}}}}}, seq l {space :p:123:p, comp lbl_name_sat:::p::p}}, space :::x}}"
+				"$verticalGroup": "par l {seq l {comp jLabel1:::p::p, space u:::p, comp lbl_hier:::p::p, space :::p, comp jScrollPane3:::p::p, space s:::p, comp lbl_name_sat:::p::p, space :::p, comp txt_body:::p::p, space u:::p, par b {comp btn_del::b:p:34:p, comp btn_addBody::b:p:34:p}, space :0:8:x}}"
+			} ) {
+				name: "jPanel2"
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "jScrollPane3"
+					add( new FormComponent( "javax.swing.JTree" ) {
+						name: "tree_planets"
+						"model": new javax.swing.tree.DefaultTreeModel( new javax.swing.tree.DefaultMutableTreeNode {
+							userObject: "Planets"
+						} )
+					} )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btn_del"
+					"text": "Delete"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btn_delActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btn_addBody"
+					"text": "Add"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btn_addBodyActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "txt_body"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lbl_name_sat"
+					"text": "Name of Satellite"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "jLabel1"
+					"text": "Select Item, then enter name and press add"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lbl_hier"
+					"text": "Enter data in hierarchical format"
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lbl_sat"
+				"font": new java.awt.Font( "Tahoma", 1, 14 )
+				"text": "Satellites (Planets and Moons)"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 778, 300 )
+			"location": new java.awt.Point( 0, 0 )
+		} )
+	}
+}

@@ -1,15 +1,16 @@
 package starsaver;
 
-import java.awt.*;
+import com.mongodb.BasicDBObject;
+import com.mongodb.MongoClient;
+import com.mongodb.client.FindIterable;
+import com.mongodb.client.MongoCollection;
+import com.mongodb.client.MongoDatabase;
+import org.bson.Document;
+
 import javax.swing.*;
-import javax.swing.GroupLayout;
-import javax.swing.LayoutStyle;
-import com.mongodb.*;
-import com.mongodb.client.*;
-import javax.swing.JOptionPane;
 import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.DefaultTreeModel;
-import org.bson.Document;
+import java.awt.*;
 
 
 /**
@@ -364,7 +365,7 @@ public class RecordStarForm extends javax.swing.JFrame {
                         .addGroup(contentPaneLayout.createSequentialGroup()
                             .addGap(50, 50, 50)
                             .addComponent(jPanel2, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-                            .addGap(0, 15, Short.MAX_VALUE))))
+                            .addGap(0, 40, Short.MAX_VALUE))))
                 .addGroup(GroupLayout.Alignment.TRAILING, contentPaneLayout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
                     .addComponent(lbl_header)

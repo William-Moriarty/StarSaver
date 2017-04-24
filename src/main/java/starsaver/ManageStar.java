@@ -1,13 +1,17 @@
 package starsaver;
 
-import java.awt.*;
+import com.mongodb.BasicDBObject;
+import com.mongodb.Block;
+import com.mongodb.MongoClient;
+import com.mongodb.client.FindIterable;
+import com.mongodb.client.MongoCollection;
+import com.mongodb.client.MongoCursor;
+import com.mongodb.client.MongoDatabase;
+import org.bson.Document;
+
 import javax.swing.*;
-import javax.swing.GroupLayout;
-import javax.swing.LayoutStyle;
-import com.mongodb.*;
-import com.mongodb.client.*;
-import org.bson.*;
-import javax.swing.JOptionPane;
+import java.awt.*;
+
 
 /**
  *
@@ -386,7 +390,7 @@ public class ManageStar extends javax.swing.JFrame {
                             .addGroup(contentPaneLayout.createParallelGroup()
                                 .addComponent(txt_viewBy, GroupLayout.PREFERRED_SIZE, 111, GroupLayout.PREFERRED_SIZE)
                                 .addComponent(lbl_criteria))
-                            .addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                            .addContainerGap(608, Short.MAX_VALUE))))
                 .addGroup(GroupLayout.Alignment.TRAILING, contentPaneLayout.createSequentialGroup()
                     .addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(lbl_header)
@@ -397,7 +401,7 @@ public class ManageStar extends javax.swing.JFrame {
                 .addGroup(GroupLayout.Alignment.TRAILING, contentPaneLayout.createSequentialGroup()
                     .addGap(35, 35, 35)
                     .addComponent(lbl_header)
-                    .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 77, Short.MAX_VALUE)
                     .addGroup(contentPaneLayout.createParallelGroup()
                         .addComponent(jPanel1, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
                         .addGroup(contentPaneLayout.createSequentialGroup()
@@ -431,7 +435,7 @@ public class ManageStar extends javax.swing.JFrame {
     FindIterable<Document> iterableStars =null;
     MongoCursor starCursor = null;
     String result;
-    System.out.println("Test");
+    System.out.println("Test2");
     txtArea.setText("");//SETS TEXT AREA EMPTY WHEN SEARCH BUTTON CLICKED TO MAKE ROOM FOR INCOMING TEXT
     
     //DEPENDING ON WHAT INDEX IS SELECTED FOR MENU DROPDOWN YOU CAN VIEW BY...
