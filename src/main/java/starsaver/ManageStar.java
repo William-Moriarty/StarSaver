@@ -431,7 +431,7 @@ public class ManageStar extends javax.swing.JFrame {
     FindIterable<Document> iterableStars =null;
     MongoCursor starCursor = null;
     String result;
-    
+    System.out.println("Test");
     txtArea.setText("");//SETS TEXT AREA EMPTY WHEN SEARCH BUTTON CLICKED TO MAKE ROOM FOR INCOMING TEXT
     
     //DEPENDING ON WHAT INDEX IS SELECTED FOR MENU DROPDOWN YOU CAN VIEW BY...
