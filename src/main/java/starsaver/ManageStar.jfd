@@ -1,0 +1,214 @@
+JFDML JFormDesigner: "6.0.0.0.84" Java: "1.8.0_112-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:27:p, comp jPanel1:::p::p, space u:::p, par l {seq {par l {seq l {comp lbl_viewBy:::p::p, space s:::p, comp cbo_viewBy:::p::p, space :p:33:p, comp btn_search:::p::p, space :p:33:p, comp btn_viewAll:::p::p, space :p:31:p, comp btn_reset2:::p:72:p, space :0:0:x}, comp jScrollPane1:::::x}, space :p:18:p}, seq {par l {comp txt_viewBy:::p:111:p, comp lbl_criteria:::p::p}, space :::x}}}, seq t {space :::x, comp lbl_header:::p::p, space :p:485:p}}"
+			"$verticalGroup": "par l {seq t {space :p:35:p, comp lbl_header:::p::p, space :::x, par l {comp jPanel1:::p::p, seq {space :p:29:p, comp jScrollPane1:::p:570:p, space :p:40:p, par l:::p {comp btn_reset2:::p::p, par l {par l:::p {comp btn_search:::::x, comp btn_viewAll::::43:x}, par b:t {comp cbo_viewBy::b:p:43:p, comp lbl_viewBy::b:p::p}}}, space :p:11:p, comp lbl_criteria:::p::p, space :::p, comp txt_viewBy:::p::p}}, space :::p}}"
+		} ) {
+			name: "this"
+			"defaultCloseOperation": 3
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lbl_viewBy"
+				"text": "View By"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btn_viewAll"
+				"text": "View All"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btn_viewAllActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btn_search"
+				"text": "Search"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btn_searchActionPerformed", true ) )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "jScrollPane1"
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "txtArea"
+					"columns": 20
+					"rows": 5
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq t {space :::x, comp lbl_id:::p::p, space u:::p, comp txt_id:::p:50:p, space :p:216:p}, seq l {space :p:23:p, par l {seq l {par t {comp lbl_mass::t:p::p, comp lbl_mag::t:p::p, comp lbl_temp::t:p::p, comp lbl_dist::t:p::p, comp lbl_const::t:p::p, comp lbl_name::t:p::p, comp lbl_type::t:p::p, comp lbl_rad:::p::p, comp lbl_lum::t:p::p}, space s:::p, par l {seq {comp jLabel1:::p::p, space :0:0:x}, seq {par l {comp lbl_choose:::p::p, seq {par l {par t:l {seq {comp rad_amend:::p::p, space :p:55:p, comp rad_del:::p::p}, par l {par t:l::p {comp txt_const::l:::x, comp cbo_type::l:::x, comp txt_name::l:::x, comp txt_dist::t:p:171:p}, par t:l::p {comp txt_lum::l::171:x, comp txt_temp::l:::x, comp txt_mass::l:::x, comp txt_mag::l:::x}}}, comp txt_radius::l:p:171:p}, space u:::p, par l {comp lbl_L::l:p::p, comp lbl_KG::l:p::p, comp lbl_Km::l:p::p, comp lbl_lightyears::l:p::p, comp lbl_M::l:p::p, comp lbl_K::l:p:18:p}}}, space ::28:x}}}, seq l {space :p:120:p, comp btn_delete:::p::p, space :::p, comp btn_confirm:::p::p, space :p:18:p, comp btn_reset:::p::p, space :::x}}}}"
+				"$verticalGroup": "par l {seq {space :p:28:p, par b {comp rad_del::b:p::p, comp rad_amend::b:p::p}, space ::34:x, comp lbl_choose:::p::p, space :p:29:p, par b {comp txt_id::b:p::p, comp lbl_id::b:p::p}, space :p:33:p, par b {comp txt_name::b:p::p, comp lbl_name::b:p::p}, space :p:26:p, par b {comp cbo_type::b:p::p, comp lbl_type::b:p::p}, space :p:26:p, par b {comp txt_const::b:p::p, comp lbl_const::b:p::p}, space :p:30:p, par b {comp txt_dist::b:p::p, comp lbl_dist::b:p::p, comp lbl_lightyears::b:p::p}, space :p:30:p, par b {comp txt_radius::b:p::p, comp lbl_rad::b:p::p, comp lbl_Km::b:p::p}, space :p:28:p, par b {comp txt_mag::b:p::p, comp lbl_mag::b:p::p, comp lbl_M::b:p::p}, space :p:33:p, par b {comp txt_mass::b:p::p, comp lbl_mass::b:p::p, comp lbl_KG::b:p::p}, space :p:34:p, par b {comp txt_temp::b:p::p, comp lbl_temp::b:p::p, comp lbl_K::b:p::p}, space :p:32:p, par b {comp txt_lum::b:p::p, comp lbl_lum::b:p::p, comp lbl_L::b:p::p}, space u:::p, comp jLabel1:::p::p, space u:::p, par l {comp btn_reset::l:p:43:p, par b {comp btn_confirm::b:p:43:p, comp btn_delete::b:p:43:p}}, space :p:46:p}}"
+			} ) {
+				name: "jPanel1"
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "txt_id"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lbl_lum"
+					"text": "Luminosity*"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lbl_choose"
+					"text": "Choose record ID to amend/delete"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btn_confirm"
+					"text": "Confirm"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btn_confirmActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btn_delete"
+					"text": "Delete"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btn_deleteActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btn_reset"
+					"text": "Reset"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btn_resetActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "txt_name"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "txt_const"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "txt_dist"
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "cbo_type"
+					"model": new javax.swing.DefaultComboBoxModel {
+						selectedItem: "-"
+						addElement( "-" )
+						addElement( "O" )
+						addElement( "B" )
+						addElement( "A" )
+						addElement( "F" )
+						addElement( "G " )
+						addElement( "K" )
+						addElement( "M" )
+					}
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "txt_mag"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lbl_id"
+					"text": "ID"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lbl_name"
+					"text": "Name"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lbl_type"
+					"text": "Type"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lbl_const"
+					"text": "Constellation"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lbl_dist"
+					"text": "Distance*"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lbl_mag"
+					"text": "Magnitude*"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lbl_mass"
+					"text": "Mass*"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "txt_mass"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lbl_temp"
+					"text": "Temperature*"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "txt_temp"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "txt_lum"
+				} )
+				add( new FormComponent( "javax.swing.JRadioButton" ) {
+					name: "rad_amend"
+					"text": "Amend"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "rad_amendActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JRadioButton" ) {
+					name: "rad_del"
+					"text": "Delete"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "rad_delActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "txt_radius"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lbl_rad"
+					"text": "Radius*"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lbl_lightyears"
+					"text": "Lightyears from Earth"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lbl_Km"
+					"text": "R"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lbl_L"
+					"text": "L"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lbl_KG"
+					"text": "M"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lbl_K"
+					"text": "K"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lbl_M"
+					"text": "Ma"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "jLabel1"
+					"font": new java.awt.Font( "Tahoma", 0, 10 )
+					"text": "* will only accept decimal or numeric values"
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "cbo_viewBy"
+				"model": new javax.swing.DefaultComboBoxModel {
+					selectedItem: "ID"
+					addElement( "ID" )
+					addElement( "Name" )
+					addElement( "Constellation" )
+					addElement( "Distance" )
+					addElement( "Mass" )
+					addElement( "Brightness" )
+				}
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "cbo_viewByActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "txt_viewBy"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lbl_criteria"
+				"text": "Enter ID"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btn_reset2"
+				"text": "Reset"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btn_reset2ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lbl_header"
+				"font": new java.awt.Font( "Tahoma", 1, 24 )
+				"text": "Manage Star Properties"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 869, 802 )
+			"location": new java.awt.Point( 0, 0 )
+		} )
+	}
+}
