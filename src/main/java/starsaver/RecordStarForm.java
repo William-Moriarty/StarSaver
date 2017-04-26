@@ -543,7 +543,7 @@ public class RecordStarForm extends javax.swing.JFrame {
     public double findBrightness(double distance, double luminosity){
 
         double sphereSurface = 4;
-
+        int area;
         double brightness =
         luminosity/(sphereSurface * Math.PI * (distance * distance));
         return brightness;
