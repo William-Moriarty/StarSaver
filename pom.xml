@@ -18,7 +18,7 @@
                 </configuration>
             </plugin>
 
-           
+
 
         </plugins>
     </build>
@@ -32,6 +32,11 @@
             <groupId>org.mongodb</groupId>
             <artifactId>mongo-java-driver</artifactId>
             <version>3.3.0</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>RELEASE</version>
         </dependency>
     </dependencies>
 

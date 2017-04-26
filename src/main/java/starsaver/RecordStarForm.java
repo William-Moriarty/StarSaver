@@ -461,7 +461,7 @@ public class RecordStarForm extends javax.swing.JFrame {
         double mass = Double.parseDouble(txt_mass.getText());
         double temp = Double.parseDouble(txt_temp.getText());
         double lum = Double.parseDouble(txt_lum.getText());
-        double bright = lum/(4 * 3.14 * (dist * dist));//BRIGHTNESS OF A STAR IS DETERMINED BY ITS LUMINOSITY AND ITS DISTANCE -FORMULA IS NOT ENTIRELY ACCURATE, JUST A ROUGH ESTIMATION
+        double bright = findBrightness(dist,lum);//BRIGHTNESS OF A STAR IS DETERMINED BY ITS LUMINOSITY AND ITS DISTANCE -FORMULA IS NOT ENTIRELY ACCURATE, JUST A ROUGH ESTIMATION
         
         //NEW TREE NODE ITEM TO ADD/EXTRACT DATA
         DefaultMutableTreeNode root = (DefaultMutableTreeNode) model.getRoot();
@@ -475,7 +475,8 @@ public class RecordStarForm extends javax.swing.JFrame {
             
         Document doc = new Document("_id", txt_id.getText()).
             append("Name", txt_name.getText()).
-            append("Type", cbo_type.getSelectedItem().toString()).
+            append("Type", getStarType()).
+               // append("Type", cbo_type.getSelectedItem().toString()).
             append("Constellation", txt_const.getText()).
             append("Distance", dist).
             append("Radius", rad).
@@ -538,6 +539,20 @@ public class RecordStarForm extends javax.swing.JFrame {
     FindIterable<Document> iterable = starColl.find(new Document("_id", id));
     return iterable.first() != null;
 }
+
+    public double findBrightness(double distance, double luminosity){
+
+        double sphereSurface = 4;
+
+        double brightness =
+        luminosity/(sphereSurface * Math.PI * (distance * distance));
+        return brightness;
+    }
+
+    public String getStarType(){
+        String starType = cbo_type.getSelectedItem().toString();
+        return starType;
+    }
     
     private void resetRoot(){
     DefaultMutableTreeNode root = (DefaultMutableTreeNode) model.getRoot();
