@@ -11,7 +11,7 @@ public class RecordStarFormTest {
     public void exists() throws Exception {
         boolean ans = true;
         boolean val;
-        String id = "17";
+        String id = "10";
         RecordStarForm starForm = new RecordStarForm();
 
         val = starForm.exists(id);
