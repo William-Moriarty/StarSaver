@@ -553,6 +553,7 @@ public class RecordStarForm extends javax.swing.JFrame {
         String starType = cbo_type.getSelectedItem().toString();
         System.out.println("The Star Type is " + starType);
         //test
+        //testing again
         return starType;
     }
     
